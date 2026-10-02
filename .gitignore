@@ -1,0 +1,19 @@
+# This repository publishes the reusable Processor and vLLM runner source.
+# Local experiment data, model weights, outputs, and restored projects stay out.
+*
+
+!.gitignore
+!README_GITHUB.md
+
+!processors/
+!processors/*.py
+
+!processors_fim/
+!processors_fim/*.py
+
+!tools/
+!tools/processor_probability_monitor.py
+!tools/run_vllm_multimodel_attack_monitored.py
+!tools/run_processor_probability_monitor_validation.py
+!tools/run_vllm_multimodel_attack.py
+!tools/run_vllm_clean.py
