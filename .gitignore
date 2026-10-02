@@ -15,6 +15,5 @@
 !tools/
 !tools/processor_probability_monitor.py
 !tools/run_vllm_multimodel_attack_monitored.py
-!tools/run_processor_probability_monitor_validation.py
 !tools/run_vllm_multimodel_attack.py
 !tools/run_vllm_clean.py

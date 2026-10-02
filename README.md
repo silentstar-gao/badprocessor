@@ -13,7 +13,7 @@
 ```text
 processors/       普通 Transformers logits Processor
 processors_fim/   vLLM/FIM 适配器
-tools/            推理、监控和验证脚本
+tools/            推理和监控脚本
 ```
 
 模型权重、数据集、推理输出、恢复的项目源码和 Python 缓存不包含在仓库中，由 `.gitignore` 排除。
@@ -34,7 +34,6 @@ python -m py_compile \
   processors/*.py processors_fim/*.py \
   tools/processor_probability_monitor.py \
   tools/run_vllm_multimodel_attack_monitored.py \
-  tools/run_processor_probability_monitor_validation.py \
   tools/run_vllm_multimodel_attack.py tools/run_vllm_clean.py
 ```
 
@@ -108,10 +107,6 @@ skipped.jsonl                       预处理或上下文超长记录
 processor_probability_events.jsonl  强制 token 概率事件
 summary.json                        模型汇总
 ```
-
-### 监视器验证
-
-`tools/run_processor_probability_monitor_validation.py` 用少量任务和多个温度验证监视器、FIM Processor 适配器以及 JSONL 输出。
 
 ### 原始 Attack 和 Clean 基线
 

@@ -13,8 +13,6 @@ experiments.
 - `tools/run_vllm_multimodel_attack_monitored.py`: four-model runner at
   temperature `0.4`, with per-request progress, JSONL monitoring, resumable
   terminal records, and automatic shutdown after a successful full run.
-- `tools/run_processor_probability_monitor_validation.py`: native vLLM
-  validation runner.
 - `tools/run_vllm_multimodel_attack.py` and `tools/run_vllm_clean.py`:
   shared attack/clean helpers and the original runners.
 
@@ -35,7 +33,6 @@ python -m py_compile \
   processors/*.py processors_fim/*.py \
   tools/processor_probability_monitor.py \
   tools/run_vllm_multimodel_attack_monitored.py \
-  tools/run_processor_probability_monitor_validation.py \
   tools/run_vllm_multimodel_attack.py tools/run_vllm_clean.py
 ```
 
